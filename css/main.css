@@ -102,16 +102,30 @@ body {
 	font-family: "Inika", serif;
 }
 
-@media (max-width: 1125px) {
+@media (min-width: 1920px) {
 	.header {
-		background-size: 1300px;
+		background-size: 1650px;
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1375px) {
 	.header {
+		background-size: 1250px;
+	}
+}
+
+@media (max-width: 1125px) {
+	.header {
+		background-size: 1150px;
+	}
+}
+
+@media (max-width: 900px) {
+	.header {
+		background-image: url("./../img/bg-mobile.png");
 		background-position: right bottom;
-		background-size: 900px;
+		background-size: 575px;
+		min-height: 88vh;
 	}
 
 	.nav {
@@ -142,18 +156,19 @@ body {
 
 @media (max-width: 555px) {
 	.header {
-		background-size: 750px;
+		background-size: 500px;
 	}
 }
 
 @media (max-width: 460px) {
 	.header {
-		background-size: 625px;
+		background-size: 450px;
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
 	.header {
-		background-size: 525px;
+		background-size: 350px;
+		background-position: right bottom 10px;
 	}
 }
