@@ -93,7 +93,6 @@ body {
 	color: #788183;
 	font-size: 20px;
 	line-height: 24px;
-	max-width: 545px;
 	opacity: 0;
 	transform: translateY(50px);
 	animation: slide-up-text 1s ease-in-out forwards;
@@ -133,7 +132,7 @@ body {
 		flex-shrink: 0;
 	}
 
-	.header_left {
+	.header_left.animation-start {
 		padding: 17px 0 0 0;
 		color: #788183;
 		font-size: 17px;
