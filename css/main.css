@@ -43,20 +43,30 @@ body {
 	padding: 7px 0;
 }
 
-.logo {
+.logo img {
 	opacity: 0;
-	transform: translateY(50px);
-	animation: slide-in-logo 1.5s ease-out 0.5s forwards; 
-	animation-delay: 3.8s;
-  }
-  
-  @keyframes slide-in-logo {
-	to {
-	  opacity: 1;
-	  transform: translateY(0);
+	animation:
+		bounce 1s ease-in-out 3800ms forwards,
+		fadeIn 1s ease-in-out 3800ms forwards;
+}
+
+@keyframes bounce {
+	0%{
+		transform: scale(0.25);
 	}
-  }
-  
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 
 /* Header */
 
@@ -81,7 +91,7 @@ body {
 	max-width: 545px;
 	opacity: 0;
 	transform: translateY(50px);
-	animation: slide-up-text 1.3s ease-out 0.5s forwards;
+	animation: slide-up-text 1s ease-in-out 3800ms forwards;
 	animation-delay: 3.8s;
 }
 
@@ -91,7 +101,7 @@ body {
 		transform: translateY(0);
 	}
 }
-  
+
 .text {
 	font-family: "Inika", serif;
 }
