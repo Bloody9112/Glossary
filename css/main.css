@@ -56,15 +56,11 @@ body {
 .header {
 	background-image: url("./../img/background.png");
 	background-repeat: no-repeat;
-	background-position: right;
-	background-size: cover;
+	background-position: bottom right;
+	background-size: auto;
 	max-width: 100%;
+	min-height: 90vh;
 	background-color: #f1f5f8;
-}
-
-.columns_header {
-	width: 100%;
-	min-height: 680px;
 }
 
 .header_left {
@@ -82,19 +78,13 @@ body {
 	font-family: "Inika", serif;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1125px) {
 	.header {
-		background-size: 1100px;
+		background-size: 1300px;
 	}
 }
 
-@media (max-width: 1150px) {
-	.header {
-		background-size: 999px;
-	}
-}
-
-@media (max-width: 770px) {
+@media (max-width: 800px) {
 	.header {
 		background-position: right bottom;
 		background-size: 900px;
@@ -119,10 +109,6 @@ body {
 		flex-shrink: 0;
 	}
 
-	.columns_header {
-		min-height: 632.49px;
-	}
-
 	.header_left {
 		padding: 17px 0 0 0;
 		color: #788183;
@@ -131,7 +117,7 @@ body {
 	}
 }
 
-@media (max-width: 550px) {
+@media (max-width: 555px) {
 	.header {
 		background-size: 750px;
 	}
@@ -145,6 +131,6 @@ body {
 
 @media (max-width: 400px) {
 	.header {
-		background-size: 555px;
+		background-size: 525px;
 	}
 }
