@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./fonts.css";
+@import "./loader.css";
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
 
 /* 
@@ -43,13 +44,19 @@ body {
 }
 
 .logo {
-	margin-right: auto;
-	transition: opacity 0.2s ease-in;
-}
-
-.logo:hover {
-	opacity: 0.8;
-}
+	opacity: 0;
+	transform: translateY(50px);
+	animation: slide-in-logo 1.5s ease-out 0.5s forwards; 
+	animation-delay: 3.8s;
+  }
+  
+  @keyframes slide-in-logo {
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
 
 /* Header */
 
@@ -59,7 +66,7 @@ body {
 	background-position: bottom right;
 	background-size: auto;
 	max-width: 100%;
-	min-height: 90vh;
+	min-height: 89vh;
 	background-color: #f1f5f8;
 }
 
@@ -70,10 +77,21 @@ body {
 	max-width: 545px;
 	color: #788183;
 	font-size: 20px;
-	line-height: 24px; /* 120% */
+	line-height: 24px;
 	max-width: 545px;
+	opacity: 0;
+	transform: translateY(50px);
+	animation: slide-up-text 1.3s ease-out 0.5s forwards;
+	animation-delay: 3.8s;
 }
 
+@keyframes slide-up-text {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+  
 .text {
 	font-family: "Inika", serif;
 }
@@ -88,7 +106,6 @@ body {
 	.header {
 		background-position: right bottom;
 		background-size: 900px;
-		max-height: 716px;
 	}
 
 	.nav {
