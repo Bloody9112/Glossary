@@ -1,0 +1,160 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
+
+/* 
+font-family: 'Inika', serif;
+*/
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+	min-width: 100%;
+	min-height: 100%;
+	background-color: #f1f5f8;
+
+	font-family: "Closer Text", sans-serif;
+	letter-spacing: -0.64px;
+	overflow-x: hidden;
+}
+
+/* General */
+
+.container {
+	margin: 0 auto;
+	padding: 0 30px;
+	max-width: 1340px;
+}
+
+.none {
+	display: none !important;
+}
+
+/* Nav */
+
+.nav {
+	padding: 28px 0;
+	min-height: 106px;
+}
+
+.nav-row {
+	padding: 7px 0;
+}
+
+.logo {
+	margin-right: auto;
+	transition: opacity 0.2s ease-in;
+}
+
+.logo:hover {
+	opacity: 0.8;
+}
+
+/* Header */
+
+.header {
+	background-image: url("./../img/background.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	max-width: 100%;
+	background-color: #f1f5f8;
+}
+
+.columns_header {
+	width: 100%;
+	min-height: 680px;
+}
+
+.header_left {
+	z-index: 1;
+	padding: 321px 0 0 0;
+	align-items: left;
+	max-width: 545px;
+	color: #788183;
+	font-size: 20px;
+	line-height: 24px; /* 120% */
+	max-width: 545px;
+}
+
+.text {
+	font-family: "Inika", serif;
+}
+
+@media (min-width: 1920px) {
+	.header {
+		background-image: url("./../img/background.png");
+		background-repeat: no-repeat;
+		background-position: initial;
+		max-height: 100%;
+		background-color: #f1f5f8;
+	}
+}
+
+@media (max-width: 1240px) {
+	.header {
+		background-size: 1100px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.header {
+		background-size: 999px;
+	}
+}
+
+@media (max-width: 770px) {
+	.header {
+		background-position: right bottom;
+		background-size: 900px;
+		max-height: 716px;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 29.3px 0 32.3px 0;
+		min-height: 84px;
+	}
+
+	.nav-row {
+		padding: unset;
+	}
+
+	.logo > img {
+		width: 121.843px;
+		height: 22.415px;
+		flex-shrink: 0;
+	}
+
+	.columns_header {
+		min-height: 632.49px;
+	}
+
+	.header_left {
+		padding: 17px 0 0 0;
+		color: #788183;
+		font-size: 17px;
+		line-height: 22px; /* 137.5% */
+	}
+}
+
+@media (max-width: 550px) {
+	.header {
+		background-size: 750px;
+	}
+}
+
+@media (max-width: 460px) {
+	.header {
+		background-size: 625px;
+	}
+}
+
+@media (max-width: 400px) {
+	.header {
+		background-size: 555px;
+	}
+}

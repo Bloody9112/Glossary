@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('../fonts/CloserTextLight.eot');
+  src: local('Closer Text Light'), local('CloserTextLight'),
+  url('../fonts/CloserTextLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CloserTextLight.woff2') format('woff2'),
+  url('../fonts/CloserTextLight.woff') format('woff'),
+  url('../fonts/CloserTextLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Closer Text';
+  src: url('../fonts/CloserTextRegular.eot');
+  src: local('Closer Text Regular'), local('CloserTextRegular'),
+  url('../fonts/CloserTextRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CloserTextRegular.woff2') format('woff2'),
+  url('../fonts/CloserTextRegular.woff') format('woff'),
+  url('../fonts/CloserTextRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Closer Text';
+  src: url('../fonts/CloserTextMedium.eot');
+  src: local('Closer Text Medium'), local('CloserTextMedium'),
+  url('../fonts/CloserTextMedium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CloserTextMedium.woff2') format('woff2'),
+  url('../fonts/CloserTextMedium.woff') format('woff'),
+  url('../fonts/CloserTextMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Closer Text';
+  src: url('../fonts/CloserTextSemiBold.eot');
+  src: local('Closer Text SemiBold'), local('CloserTextSemiBold'),
+  url('../fonts/CloserTextSemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CloserTextSemiBold.woff2') format('woff2'),
+  url('../fonts/CloserTextSemiBold.woff') format('woff'),
+  url('../fonts/CloserTextSemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
